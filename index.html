@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Mamatha Sri.S | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="calculator">
-    <input type="text" id="display" disabled>
+<header class="hero">
+    <h1>Mamatha Sri</h1>
+    <p>Web Developer | Data Science Enthusiast</p>
+</header>
 
-    <div class="buttons">
-        <button onclick="clearDisplay()">C</button>
-        <button onclick="deleteLast()">DEL</button>
-        <button onclick="appendValue('/')">÷</button>
-        <button onclick="appendValue('*')">×</button>
+<nav class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <button onclick="appendValue('7')">7</button>
-        <button onclick="appendValue('8')">8</button>
-        <button onclick="appendValue('9')">9</button>
-        <button onclick="appendValue('-')">−</button>
+<section id="about" class="card">
+    <h2>About Me</h2>
+    <img src="profile.jpeg" alt="test">
+    <p>
+        I am a Computer Science student passionate about building clean and
+        responsive websites and exploring Machine Learning projects.
+    </p>
+</section>
 
-        <button onclick="appendValue('4')">4</button>
-        <button onclick="appendValue('5')">5</button>
-        <button onclick="appendValue('6')">6</button>
-        <button onclick="appendValue('+')">+</button>
-
-        <button onclick="appendValue('1')">1</button>
-        <button onclick="appendValue('2')">2</button>
-        <button onclick="appendValue('3')">3</button>
-        <button onclick="calculateResult()" class="equal">=</button>
-
-        <button onclick="appendValue('0')" class="zero">0</button>
-        <button onclick="appendValue('.')">.</button>
+<section id="skills" class="card">
+    <h2>My Skills</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Python</span>
+        <span>Java</span>
+        <span>SQL</span>
+        <span>Machine Learning</span>
     </div>
-</div>
+</section>
 
-<script src="script.js"></script>
+<section id="projects" class="card">
+    <h2>Projects</h2>
+    <div class="project-box">
+        <h3>Heart Disease Prediction</h3>
+        <p>ML classification model using Python.</p>
+    </div>
+    <div class="project-box">
+        <h3>Face Mask Detection</h3>
+        <p>Computer Vision using OpenCV.</p>
+    </div>
+</section>
+
+<section id="resume" class="card">
+    <h2>Resume</h2>
+    <a class="btn" href="resume.pdf" download>Download Resume</a>
+</section>
+
+<section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: ms7972665@gmail.com</p>
+    <p>Phone: 6381520658</p>
+</section>
+
+<footer>
+    © 2026 Mamatha Sri | All Rights Reserved
+</footer>
+
 </body>
 </html>
